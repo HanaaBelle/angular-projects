@@ -9,5 +9,17 @@ import { CommonModule } from '@angular/common';
   styleUrl: './input-button-unit.component.scss'
 })
 export class InputButtonUnitComponent {
-  title = 'Learn about components';
+  title = 'Hello World';
+
+  constructor() { 
+    console.log('in constructor');
+    this.changeTitle('My First Angular App');
+    console.log(this.title);
+  }
+  
+  changeTitle(newTitle: string): void {
+    this.title = newTitle;
+    console.log(this.title);
+  }
+
 }
