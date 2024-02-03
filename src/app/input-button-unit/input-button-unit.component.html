@@ -6,6 +6,9 @@
 
   {{ generateTitle() }}
 
-  <input id="my-input" [value]="generateTitle()">
+  <input id="my-input" [value]="title" 
+    (keyup.enter)="changeTitle(getInputValue($event))">
 
-  <button>Save</button>
+  <button (click)="changeTitle('Button Clicked!')">
+    Save
+  </button>
