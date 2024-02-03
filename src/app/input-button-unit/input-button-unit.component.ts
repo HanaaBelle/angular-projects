@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './input-button-unit.component.html',
   styleUrl: './input-button-unit.component.scss'
 })
+
 export class InputButtonUnitComponent {
   title = 'Hello World';
 
@@ -23,3 +24,10 @@ export class InputButtonUnitComponent {
   }
 
 }
+
+function multiply (x: number, y: number): number {
+  return x * y;
+}
+​
+let z = multiply(4, 5);
+console.log(z);
